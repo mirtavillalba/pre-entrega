@@ -80,6 +80,7 @@ main {
   border: 2px solid rgb(176, 156, 156);
   width: 100%;
   height: 80vh;
+  z-index: 99999;
 }
 
 .titulo-home {
@@ -130,6 +131,7 @@ main .parrafo-home {
 
 .productos-home {
   width: 100%;
+  height: 50%;
 }
 
 .productos-home h2 {
@@ -141,22 +143,27 @@ main .parrafo-home {
 
 .contenedor-tarjetas {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  z-index: 999999;
+  height: 65vh;
+
 }
 
 .tarjeta-producto {
   background-color: #1d1a20;
   padding: 1rem;
   border-radius: 1rem;
-  width: 30rem;
-
+  width: 20%;
+  z-index: 999999;
   /* hacemos flexibles los elementos del article */
   /* los colocamos en columna y centrados */
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 65%;
 
   /* separacion */
   gap: 1rem;
@@ -174,12 +181,39 @@ main .parrafo-home {
 .tarjeta-producto img {
   width: 100%;
   border-radius: 0.5rem;
+  height: 50%;
 }
 
 .contenedor-audio {
          text-align: center
     }
 
+
+    
+#contenedor-carrito {
+ background-color: #1d1a20;        
+display: flex;
+flex-direction: row;
+justify-content:center;
+}
+
+.header__nav__ul{
+  display: flex;
+  gap: 100px;
+    }
+
+.li_carrito{
+  background-color: blue ;
+  border: 3px solid  #d21f3c;
+  border-radius: 50%;
+    }
+
+
+    .carrito-icono{
+  color:red;
+  font-size: 32px;
+
+    }
 
 /* -------------------------------------------------------------------------- */
 /*                                  Contacto                                  */
